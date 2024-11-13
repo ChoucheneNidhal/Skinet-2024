@@ -31,7 +31,7 @@ namespace Infrastructure.Data
             return await context.Products.FindAsync(id);
         }
 
-        public async Task<IReadOnlyList<Product>> GetProductsAsync(string? brand, string? type, string sort)
+        public async Task<IReadOnlyList<Product>> GetProductsAsync(string? brand, string? type, string? sort)
         {
             var query = context.Products.AsQueryable();
 
