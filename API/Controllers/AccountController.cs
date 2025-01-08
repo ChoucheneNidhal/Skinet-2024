@@ -60,7 +60,7 @@ public class AccountController(SignInManager<AppUser> signInManager) : BaseApiCo
                 user.FirstName,
                 user.LastName,
                 user.Email,
-                Addess = user.Address?.ToDto()
+                Address = user.Address?.ToDto()
             });
             
     }

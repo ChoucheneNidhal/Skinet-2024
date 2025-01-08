@@ -29,6 +29,8 @@ builder.Services.AddSingleton<ICartService, CartServices>();
 builder.Services.AddAuthorization();
 builder.Services.AddIdentityApiEndpoints<AppUser>()
     .AddEntityFrameworkStores<StoreContext>();
+builder.Services.AddScoped<IPaymentService, PaymentService>();
+
 var app = builder.Build();
 
 //Configure the HTTP request pipeline
