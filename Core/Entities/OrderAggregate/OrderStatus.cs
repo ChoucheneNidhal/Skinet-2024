@@ -4,5 +4,6 @@ public enum OrderStatus
 {
     Pending,
     PaymentReceived,
-    PyamentFailed
+    PyamentFailed,
+    PaymentMismatch
 }
